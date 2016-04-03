@@ -1,3 +1,4 @@
+//
 // Clothes: name, type, id, gorgeous, simple, elegant, active, mature, cute, sexy, pure, cool, warm，extra, source
 // credits to jillhx@tieba
 var wardrobe = [
