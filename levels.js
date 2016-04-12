@@ -497,7 +497,7 @@ function addBonusInfo(base, weight, tag) {
   "2-4": [],
   "2-5": [],
   "2-6": [addBonusInfo('B', 0.25, "和风")],
-  "2-7": [replaceBonusInfo('SS', 1, "睡衣")],
+  "2-7": [replaceBonusInfo('SS', 1, "睡衣"), replaceBonusInfo('B', 1, '居家服')],
   "2-8": [],
   "2-9": [addBonusInfo('B', 0.25, "欧式古典")],
   "2-支1": [],
