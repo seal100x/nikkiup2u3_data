@@ -529,7 +529,7 @@ function addBonusInfo(base, weight, tag) {
   "3-8": [],
   "3-9": [addBonusInfo('B', 0.25, "侠客联盟")],
   "3-10": [addBonusInfo('B', 0.25, "小动物")],
-  "3-11": [addBonusInfo('A', 0.5, "欧式古典")],
+  "3-11": [addBonusInfo('S', 1, "欧式古典")],
   "3-12": [addBonusInfo('B', 1, "运动系")],
   "3-支1": [addBonusInfo('B', 1, "欧式古典")],
   "3-支2": [replaceBonusInfo('SS', 1, '婚纱')],
