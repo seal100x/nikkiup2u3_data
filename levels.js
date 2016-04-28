@@ -52,6 +52,9 @@ var tasksRaw = {
 
 //活动关卡，总在最前
 var extraRaw = {
+	'黄牛票贩': [2, 3.33, 2, 1.33, -1.33],
+	'浪漫约会': [0.8, 1.33, -1.8, 1.67, 0.8],
+	'温度比风度重要': [2, -1, 1, 2, -2.67],
 };
 
 // all data are presented in order "simple", "cute", "active", "pure", "cool"
@@ -494,6 +497,8 @@ function addBonusInfo(base, weight, tag) {
  *  - Special rules
  */
  var levelBonus = {
+'浪漫约会': [addBonusInfo('A', 1, "欧式古典")],
+'温度比风度重要': [addBonusInfo('A', 0.5, "冬装")],
   "1-1": [],
   "1-2": [],
   "1-3": [addBonusInfo('B', 0.25, "中式古典")],
@@ -688,6 +693,9 @@ var additionalLevelInfo = {
 };
 
 var addSkillsInfo = {
+'黄牛票贩' :[null,['微笑','挑剔','真爱','灰姑娘']],
+'浪漫约会' :[null,['微笑','挑剔','沉睡','反挑']],
+'温度比风度重要' :[null,['微笑','挑剔','真爱','反挑']],
 '1-1': [null,['微笑','挑剔','沉睡','灰姑娘']],
 '1-2': [null,['微笑','挑剔','飞吻','圣诞']],
 '1-3': [null,['微笑','挑剔','真爱','圣诞']],
