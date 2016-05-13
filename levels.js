@@ -52,6 +52,11 @@ var tasksRaw = {
 
 //活动关卡，总在最前
 var extraRaw = {
+'豆蔻华年': [1, 1, -1, 1, -1],
+'琴意随心动': [1, 1, -1, 1, -1],
+'毕业典礼': [1, 1, -1, 1, -1],
+'杀出重围': [1, -1, -1, -1, 1],
+'萤火虫之舞': [-1, 1, -1, 1, -1],
 };
 
 // all data are presented in order "simple", "cute", "active", "pure", "cool"
@@ -494,6 +499,11 @@ function addBonusInfo(base, weight, tag) {
  *  - Special rules
  */
  var levelBonus = {
+"豆蔻华年": [addBonusInfo('A', 1, "中式古典")],
+"琴意随心动": [addBonusInfo('A', 1, "中式古典")],
+"毕业典礼": [addBonusInfo('A', 1, "学院系")],
+"杀出重围": [addBonusInfo('A', 1, "OL")],
+"萤火虫之舞": [addBonusInfo('A', 1, "舞者")],
   "1-1": [],
   "1-2": [],
   "1-3": [addBonusInfo('B', 0.25, "中式古典")],
