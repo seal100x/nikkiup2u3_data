@@ -1,4 +1,28 @@
 // 开心的修改代码
+var themeFilter = [
+	['活动', '活动'],
+	['竞技场', '竞技场'],
+	['联盟第一章', '联盟委托: 1'],
+	['联盟第二章', '联盟委托: 2'],
+	['联盟第三章', '联盟委托: 3'],
+	['联盟第四章', '联盟委托: 4'],
+	['联盟第五章', '联盟委托: 5'],
+	['第一章', '关卡: 1'],
+	['第二章', '关卡: 2'],
+	['第三章', '关卡: 3'],
+	['第四章', '关卡: 4'],
+	['第五章', '关卡: 5'],
+	['第六章', '关卡: 6'],
+	['第七章', '关卡: 7'],
+	['第八章', '关卡: 8'],
+	['第九章', '关卡: 9'],
+	['第十章', '关卡: 10'],
+	['第十一章', '关卡: 11'],
+	['第十二章', '关卡: 12'],
+	['第十三章', '关卡: 13'],
+	['织梦人', '织梦人'],
+];
+
 //简可活纯凉
 var competitionsRaw = {
   '海边派对的搭配': [0.67, 1.33, 1.0, -1.33, 1.33],
@@ -232,6 +256,10 @@ var levelsRaw = {
   '13-支1': [1.8, 2.8, 1.9, 2.8, 1.1],
   '13-支2': [2.33, 1.67, 2.2, 1.4, 0.8],
   '13-支3': [-1.2, -1.6, 1.67, -0.67, -1.2],
+};
+
+//织梦
+var dreamWeavingRaw = {	
   '绫罗1-6': [1.6, 1.2, -2.3, 2.1, -0.67],
   '绫罗2-2': [1.6, 1.4, -2.3, 2.1, -0.67],
   '绫罗2-7': [-1.2, -1.5, 2.1, -2, 0.67],
@@ -242,7 +270,7 @@ var levelsRaw = {
   '洁洁云1-2': [2.1, -1.5, -2, -1.4, 0.67],
   '洁洁云2-7': [-2, 1.9, -1.33, 1.33, -0.67],
   '克洛里斯1-3': [-2.3, 1, -2.3, 1.6, -1],
-};
+}
 
 function tagMatcher(whitelist, clothes) {
   for (var i in clothes.tags) {
@@ -284,109 +312,47 @@ function normalFilter(tagWhitelist, nameWhitelist) {
   return weightedFilter(tagWhitelist, nameWhitelist, 10);
 }
 
-function noOp() {
-  return {
-    filter: function() {
-      return;
-    }
-  };
-}
-
-// Note: filters decides which clothes will be penalized (usually 1/10 of the score)
-// Only applicable to dresses, coats, tops and bottoms
+// IP君按tag过滤F品, 目前只显示提示文字
 var levelFilters = {
-  '1-1': noOp(),
-  '1-2': noOp(),
   '1-3': normalFilter("中式古典/中式现代/旗袍/民国服饰"),
-  '1-4': noOp(),
-  '1-5': noOp(),
-  '1-6': noOp(),
   '1-7': normalFilter("中性风"),
-  '1-8': noOp(),
-  '1-9': noOp(),
-  '2-1': noOp(),
-  '2-2': noOp(),
-  '2-3': noOp(),
-  '2-4': noOp(),
-  '2-5': noOp(),
   '2-6': normalFilter("和风"),
   '2-7': normalFilter("睡衣"),
-  '2-8': noOp(),
   '2-9': normalFilter("欧式古典/晚礼服/女神系/波西米亚"),
-  '2-支1': normalFilter(""), // TODO: check
   '2-支2': normalFilter("中性风"),
   '3-1': normalFilter("英伦", "名媛连衣裙"),
   '3-2': normalFilter("摇滚风"),
-  '3-3': noOp(),
   '3-4': normalFilter("森女系列"),
   '3-5': normalFilter("运动系", "运动"),
   '3-6': weightedFilter("沐浴/和风", null, 160),
   '3-7': normalFilter("运动系"), // TODO: double check
-  '3-8': noOp(),
   '3-9': normalFilter("侠客联盟/摇滚风"),
-  '3-10': noOp(),
   '3-11': normalFilter("欧式古典/晚礼服/女神系/波西米亚"),
-  '3-12': noOp(),
   '3-支1': normalFilter("欧式古典/晚礼服/女神系/波西米亚"),
   '3-支2': normalFilter("婚纱"),
-  '4-1': noOp(),
   '4-2': weightedFilter("泳装", null, 32),
   '4-3': weightedFilter("泳装", null, 32),
-  '4-4': noOp(),
-  '4-5': noOp(),
   '4-6': normalFilter("OL"),
   '4-7': normalFilter("欧式古典/晚礼服/女神系/波西米亚"),
   '4-8': normalFilter("医务使者"),
   '4-9': normalFilter("中式古典/中式现代/旗袍/民国服饰"),
-  '4-10': noOp(),
-  '4-11': noOp(),
   '4-12': normalFilter("兔女郎"),
-  '4-支1': noOp(),
   '4-支2': normalFilter("围裙"),
   '4-支3': normalFilter("围裙"),
   '5-1': normalFilter("运动系", "运动"),
-  '5-2': noOp(),
-  '5-3': noOp(),
-  '5-4': noOp(),
-  '5-5': noOp(),
   '5-6': normalFilter("民国服饰"),
   '5-7': normalFilter("波西米亚"),
-  '5-8': noOp(),
-  '5-9': noOp(),
-  '5-10': noOp(),
   '5-11': normalFilter("侠客联盟"),
   '5-12': normalFilter("中式古典/中式现代/旗袍/民国服饰"),
-  '5-支1': noOp(),
   '5-支2': normalFilter("运动系"), // TODO: double check,
   '5-支3': normalFilter("医务使者"),
-  '6-1': noOp(),
   '6-2': normalFilter("中式古典/中式现代/旗袍/民国服饰"),
   '6-3': normalFilter("和风"),
-  '6-4': noOp(),
-  '6-5': noOp(),
   '6-6': normalFilter("中性风"),
-  '6-7': noOp(),
   '6-8': normalFilter("中式现代/泳装"),
   '6-9': normalFilter("旗袍"),
   '6-10': normalFilter("中式现代/冬装"),
   '6-11': normalFilter("中式古典/中式现代/旗袍/民国服饰"),
-  '6-支1': noOp(), // Not tested yet, not eligible for this level yet
-  '6-支2': noOp(), // Not tested yet, not eligible for this level yet
-  '6-支3': noOp(), // Not tested yet, not eligible for this level yet
-  '7-1': noOp(),
-  '7-2': noOp(),
-  '7-3': noOp(),
-  '7-4': noOp(),
-  '7-5': noOp(),
-  '7-6': noOp(),
-  '7-7': noOp(),
-  '7-8': noOp(),
-  '7-9': noOp(),
-  '7-支1': noOp(),
-  '7-支2': noOp(),
-  '7-支3': noOp(),
-  '7-支4': noOp(),
-  '7-支5': noOp()
 };
 
 function abstractBonusFactory(note, replace, param, tagWhitelist, nameWhitelist, callback) {
@@ -430,62 +396,6 @@ function addScoreBonusFactory(bonus, multiplier, tagWhitelist, nameWhitelist) {
 function replaceScoreBonusFactory(bonus, multiplier, tagWhitelist, nameWhitelist) {
   return abstractBonusFactory('各属性均视为相符，且替换为', true, bonus + " * " + multiplier,
       tagWhitelist, nameWhitelist, featureBasedScoringFactory(bonus, multiplier));
-}
-
-function swimsuitFactory() {
-  return abstractBonusFactory('仅可爱/成熟与清纯/性感依权重加分', false, 'SS', "泳装",
-      null, function(criteria, clothes) {
-        var total = 0;
-        var onlyFeatures = ['cute', 'pure'];
-        var byFeature = {};
-        for (var i in onlyFeatures) {
-          var f = onlyFeatures[i];
-          var addon = Math.abs(criteria[f] * clothes.type.score['SS']);
-          byFeature[f] = addon;
-          total += addon;
-        }
-        return [total, byFeature];
-  });
-}
-
-function specialFactory76A() {
-  return abstractBonusFactory('华丽	成熟	优雅	清纯	清凉 分别按照权重增加', false, 'B, SS, B, C, C', "晚礼服",
-      null, function(criteria, clothes) {
-        var total = 0;
-        var byFeature = {};
-        byFeature['simple'] = Math.abs(criteria['simple'] * clothes.type.score['B']);
-        byFeature['cute'] = Math.abs(criteria['cute'] * clothes.type.score['SS']);
-        byFeature['active'] = Math.abs(criteria['active'] * clothes.type.score['B']);
-        byFeature['pure'] = Math.abs(criteria['pure'] * clothes.type.score['C']);
-        byFeature['cool'] = Math.abs(criteria['cool'] * clothes.type.score['C']);
-        
-        total += byFeature['simple'];
-        total += byFeature['cute'];
-        total += byFeature['active'];
-        total += byFeature['pure'];
-        total += byFeature['cool'];
-        return [total, byFeature];
-  });
-}
-
-function specialFactory76B() {
-  return abstractBonusFactory('华丽	成熟	优雅	清纯	清凉 分别按照权重增加', false, 'B, SS, B, C, C', "中式现代",
-      null, function(criteria, clothes) {
-        var total = 0;
-        var byFeature = {};
-        byFeature['simple'] = Math.abs(criteria['simple'] * clothes.type.score['B']);
-        byFeature['cute'] = Math.abs(criteria['cute'] * clothes.type.score['SS']);
-        byFeature['active'] = Math.abs(criteria['active'] * clothes.type.score['B']);
-        byFeature['pure'] = Math.abs(criteria['pure'] * clothes.type.score['C']);
-        byFeature['cool'] = Math.abs(criteria['cool'] * clothes.type.score['C']);
-        
-        total += byFeature['simple'];
-        total += byFeature['cute'];
-        total += byFeature['active'];
-        total += byFeature['pure'];
-        total += byFeature['cool'];
-        return [total, byFeature];
-  });
 }
 
 function bonusInfo(base, weight, tag, replace) {
@@ -716,13 +626,8 @@ function addBonusInfo(base, weight, tag) {
   "洁洁云1-2": [addBonusInfo('B', 1, "OL")],
   "洁洁云2-7": [addBonusInfo('A', 1, "洛丽塔")],
   "克洛里斯1-3": [addBonusInfo('C', 1, "舞者")],
-   };
- 
-var additionalLevelInfo = {
-  "4-2": [swimsuitFactory()],
-  "4-3": [swimsuitFactory()],
-  '7-6': [specialFactory76A(), specialFactory76B()]
 };
+ 
 
 var addSkillsInfo = {
 '1-1': [null,['微笑','挑剔','沉睡','灰姑娘']],
@@ -1152,12 +1057,6 @@ function level(name, criteria) {
       bonusFilter.push(levelBonus[name][i]);
     }
   }
-  var additionalBonus = [];
-  if (additionalLevelInfo[name]) {
-    for (var i in additionalLevelInfo[name]) {
-      additionalBonus.push(additionalLevelInfo[name][i](criteria));
-    }
-  }
   var skills = [];
   if (addSkillsInfo[name]) {
     for (var i in addSkillsInfo[name]) {
@@ -1173,7 +1072,6 @@ function level(name, criteria) {
     weight: criteria,
     filter: filter,
     bonus: bonusFilter,
-    additionalBonus: additionalBonus,
 	skills: skills,
 	hint: hint
   }
@@ -1196,6 +1094,10 @@ allThemes = function() {
   for (var theme in levelsRaw) {
     var criteria = levelsRaw[theme];
     ret['关卡: ' + theme] = level(theme, parseCriteriaList(criteria));
+  }
+  for (var theme in dreamWeavingRaw) {
+    var criteria = dreamWeavingRaw[theme];
+    ret['织梦人: ' + theme] = level(theme, parseCriteriaList(criteria));
   }
   return ret;
 }();
