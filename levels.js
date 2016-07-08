@@ -85,7 +85,8 @@ var tasksRaw = {
 
 //活动关卡，总在最前
 var extraRaw = {
-  '繁星1-朱雀煌煌': [1.33, 1.0, 0.67, 1.33, -1.33],
+//'繁星1-朱雀煌煌': [1.33, 1.0, 0.67, 1.33, -1.33],
+  '繁星2-苍龙之腹': [1.33, 1.33, 1.33, 1.0, 0.67],
 };
 
 // all data are presented in order "simple", "cute", "active", "pure", "cool"
