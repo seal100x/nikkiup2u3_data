@@ -87,7 +87,8 @@ var tasksRaw = {
 var extraRaw = {
 //'繁星1-朱雀煌煌': [1.33, 1.0, 0.67, 1.33, -1.33],
 //'繁星2-苍龙之腹': [1.33, 1.33, 1.33, 1.0, 0.67],
-'繁星3-月鹿仰颈': [-1.0, -1.33, -1.33, -1.33, 0.67],
+//'繁星3-月鹿仰颈': [-1.0, -1.33, -1.33, -1.33, 0.67],
+'繁星4-姻缘之宿': [1.33, 0.67, -1.33, 1.33, 1.0],
 };
 
 // all data are presented in order "simple", "cute", "active", "pure", "cool"
@@ -438,6 +439,7 @@ function addBonusInfo(base, weight, tag) {
  *  - Special rules
  */
  var levelBonus = {
+  '繁星4-姻缘之宿': [addBonusInfo('A', 1, "中式现代"), addBonusInfo('A', 1, '中式古典')],
   "1-1": [],
   "1-2": [],
   "1-3": [addBonusInfo('B', 0.25, "中式古典")],
