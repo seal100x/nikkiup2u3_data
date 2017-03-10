@@ -827,7 +827,7 @@ function addBonusInfo(base, weight, tag) {
   "联盟委托: 8-2": [addBonusInfo('SS', 1, "中式古典")],
   "联盟委托: 8-3": [addBonusInfo('A', 2, "童话系")],
   "联盟委托: 8-4": [addBonusInfo('A', 0.5, "小动物")],
-  协战: 奥兰多-中性风': [addBonusInfo('A', 1, "中性风")],
+  '协战: 奥兰多-中性风': [addBonusInfo('A', 1, "中性风")],
 '协战: 奥兰多-晚礼服': [addBonusInfo('B', 1, "晚礼服")],
 '协战: 艾思-欧式古典': [addBonusInfo('A', 1, "欧式古典")],
 '协战: 艾思-民族风': [addBonusInfo('A', 1, "民族风")],
