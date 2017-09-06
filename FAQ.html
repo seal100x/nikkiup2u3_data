@@ -162,6 +162,39 @@ p {
 <p>
 	<span class="ditem">A11：发型、连衣裙等部位那里，最右边选择“全部”（手机太卡的话就每个部位挨个来），"显示全部衣服"后，点击“添加所有显示的衣服到衣柜”。</span><br>
 	<span class="ditem">&emsp;&emsp;&nbsp;&nbsp;衣服较多的小伙伴可以在满衣柜的基础上，（利用搜索、筛选等方法，或者在使用过程中）去掉没有的服装（点击服装名反选）。</span><br>
+	<span class="ditem">&emsp;&emsp;&nbsp;&nbsp;手机太卡的小伙伴可以<a href="#loadAllInventory" onclick="loadAllInventory();return false;">&lt;&lt;点击这里生成&gt;&gt;</a>全衣柜文本到备份区（我拥有的服装）恢复备份。</span><br>
+	<span class="ditem">&emsp;&emsp;&nbsp;&nbsp;<textarea id="myClothes" rows="6" style="width:60%; display:none;"></textarea></span><br>
+	<script type='text/javascript' charset="UTF-8">
+		function loadAllInventory(){
+			if (document.getElementsByTagName('head')[0].innerHTML.indexOf('wardrobe.js')>=0) {
+				genAllInventory();
+			}else {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'wardrobe.js';
+				script.charset = 'UTF-8';
+				script.onload = function(){
+					genAllInventory();
+				};
+				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+		}
+		function genAllInventory(){
+			var objCats = {};
+			for (var i in wardrobe){
+				var mainType = wardrobe[i][1].split('-')[0];
+				var id = wardrobe[i][2];
+				if (!objCats[mainType]) objCats[mainType] = [];
+				objCats[mainType].push(id);
+			}
+			var outStr = '';
+			for (var i in objCats){
+				outStr += i + ':' + objCats[i].join(',') + '|';
+			}
+			document.getElementById('myClothes').value = outStr;
+			document.getElementById('myClothes').style.display = 'inline';
+		}
+	</script>
 </p>	
 </details><br>
 
