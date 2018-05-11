@@ -656,9 +656,9 @@ function addBonusInfo(base, weight, tag) {
  *  - Special rules
  */
  var levelBonus = {
-  '洛燕城-云端礼服': [addBonusInfo('78.5', S, "中式古典"), addBonusInfo('', , "0.5")],
-  '晦雪哨站-苹果联邦定制礼服': [addBonusInfo('49.3', B, "晚礼服"), addBonusInfo('', , "0.5")],
-  '圣西城-保暖的服装': [addBonusInfo('54', A, "冬装"), addBonusInfo('', , "0.5")],
+  '洛燕城-云端礼服': [addBonusInfo('S', 0.5, "中式古典")],
+  '晦雪哨站-苹果联邦定制礼服': [addBonusInfo('B', 0.5, "晚礼服")],
+  '圣西城-保暖的服装': [addBonusInfo('A', 0.5, "冬装")],
 //'1-博物馆之约': [addBonusInfo('A', 0.25, "欧式古典"), addBonusInfo('S', 0.1, "晚礼服")],
 //'4-雨林奇遇': [addBonusInfo('C', 1, "小动物")],
 //'倾心回忆2018.4-春与花恋': [addBonusInfo('S', 0.5, "森女系列")],	 
