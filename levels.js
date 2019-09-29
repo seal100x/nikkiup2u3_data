@@ -704,6 +704,8 @@ function addBonusInfo(base, weight, tag) {
  *  - Special rules
  */
  var levelBonus = {
+  '1-2-城郊月': [addBonusInfo('C', 0.5, "小动物")],
+  '3-2-礼物': [addBonusInfo('B', 0.5, "学院系")],
 //'繁星预测4-姻缘之宿': [addBonusInfo('S', 1, "中式古典"), addBonusInfo('S', 1, "中式现代")],
 //'繁星预测5-神鸟为乌': [addBonusInfo('S', 1, "侠客联盟")],
 //'繁星预测7-诸星归位': [addBonusInfo('S', 1, "中式古典"), addBonusInfo('S', 1, "中式现代")],
