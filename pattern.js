@@ -10747,10 +10747,10 @@ var pattern = function() {
     var mainType = ['发型','连衣裙','外套','上装','下装','袜子','鞋子','饰品','妆容','萤光之灵'];
     var ret = [];
     for (var i in pattern_m) 
-        ret.push([mainType[pattern_m[i][0]], addzero(pattern_m[i][1]), mainType[pattern_m[i][2]], addzero(pattern_m[i][3]), pattern_m[i][4].toString(), '设']);
+        ret.push([mainType[pattern_m[i][0]], numberToInventoryId(pattern_m[i][1]), mainType[pattern_m[i][2]], numberToInventoryId(pattern_m[i][3]), pattern_m[i][4].toString(), '设']);
     for (var i in pattern_c) 
-        ret.push([mainType[pattern_c[i][0]], addzero(pattern_c[i][1]), mainType[pattern_c[i][2]], addzero(pattern_c[i][3]), pattern_c[i][4].toString(), '染']);
+        ret.push([mainType[pattern_c[i][0]], numberToInventoryId(pattern_c[i][1]), mainType[pattern_c[i][2]], numberToInventoryId(pattern_c[i][3]), pattern_c[i][4].toString(), '染']);
     for (var i in pattern_e) 
-        ret.push([mainType[pattern_e[i][0]], addzero(pattern_e[i][1]), mainType[pattern_e[i][2]], addzero(pattern_e[i][3]), pattern_e[i][4].toString(), '进']);
+        ret.push([mainType[pattern_e[i][0]], numberToInventoryId(pattern_e[i][1]), mainType[pattern_e[i][2]], numberToInventoryId(pattern_e[i][3]), pattern_e[i][4].toString(), '进']);
     return ret;
 }();

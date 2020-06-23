@@ -15582,7 +15582,7 @@ var wardrobe = function() {
         var w = codewardrobe[i].split('|');
         item.push(w[0]);
         item.push(category[code2num(w[1].charAt(0))]);
-        item.push(addzero(code2num(w[1].substr(1))));
+        item.push(numberToInventoryId(code2num(w[1].substr(1))));
         item = item.concat(code2stat(w[2]));
         if (w[3] == '' || w[3].indexOf('+')>0) item.push(w[3]);
         else item.push(code2tag[code2num(w[3].charAt(0))] + (w[3].length > 1 ? '/' + code2tag[code2num(w[3].charAt(1))] : '' ));
@@ -15590,8 +15590,8 @@ var wardrobe = function() {
         for (var s in w6s) {
             if (!iscode(w6s[s])) srcs.push(w6s[s]);
             else if (w6s[s].charAt(0) == '*') srcs.push('套装·' + code2suit[code2num(w6s[s].substr(1))]);
-            else if (w6s[s].charAt(0) == '@') srcs.push('设·定' + addzero(code2num(w6s[s].substr(1))));
-            else if (w6s[s].charAt(0) == '!') srcs.push('设·进' + addzero(code2num(w6s[s].substr(1))));
+            else if (w6s[s].charAt(0) == '@') srcs.push('设·定' + numberToInventoryId(code2num(w6s[s].substr(1))));
+            else if (w6s[s].charAt(0) == '!') srcs.push('设·进' + numberToInventoryId(code2num(w6s[s].substr(1))));
             else srcs.push(code2src[code2num(w6s[s])]);
         }
         item.push(srcs.join('/'));
@@ -15629,7 +15629,7 @@ function code2stat(s) {
     ret.unshift(num.toString());
     return ret;
 }
-function addzero(s) {
+function numberToInventoryId(s) {
     if (s < 10) return '00' + s;
     if (s < 100) return '0' + s;
     else return s.toString();
