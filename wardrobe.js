@@ -15588,7 +15588,7 @@ var codewardrobe = [
 '碧罗清韵|2Ge|*5SSG|I|*F1|1b|*F1|4L',
 '热情彩虹|0bb|4NAc|||1b|x|30',
 '璨夏云影|3Dv|4YOz|||1b|x|30',
-'寂然岁月|4Cj|5vsX|A||1b|x|30',
+'缤纷夏色|4Ct|4S4t|||1b|x|30',
 '炙热阳光|M1rm|4NAd|||1b|x|30',
 '风色纯馨|0aw|4Jq2|||1b|2v|51',
 '踏雪留香|7W6|4KhG|||1b|2v|51',
@@ -15611,12 +15611,12 @@ var wardrobe = function() {
         else item.push(code2tag[code2num(w[3].charAt(0))] + (w[3].length > 1 ? '/' + code2tag[code2num(w[3].charAt(1))] : '' ));
         var w6s = w[6].split('/'), srcs = [];
         for (var s in w6s) {
-            if (!iscode(w6s[s])) srcs.push(w6s[s]);
-            else if (w6s[s].charAt(0) == '*') srcs.push('套装·' + code2suit[code2num(w6s[s].substr(1))]);
+            if (w6s[s].charAt(0) == '*') srcs.push('套装·' + code2suit[code2num(w6s[s].substr(1))]);
             else if (w6s[s].charAt(0) == '@') srcs.push('设·定' + numberToInventoryId(code2num(w6s[s].substr(1))));
             else if (w6s[s].charAt(0) == '!') srcs.push('设·进' + numberToInventoryId(code2num(w6s[s].substr(1))));
             else if (w6s[s].charAt(0) == '~') srcs.push('梦境·' + w6s[s].substr(1));
-            else srcs.push(code2src[code2num(w6s[s])]);
+            else if (iscode(w6s[s])) srcs.push(code2src[code2num(w6s[s])]);
+            else srcs.push(w6s[s]);
         }
         item.push(srcs.join('/'));
         if (w[4] == '') item.push('');
@@ -15660,11 +15660,9 @@ function numberToInventoryId(s) {
     else return s.toString();
 }
 function iscode(s) {
-    var c = s.charCodeAt(0);
-    if (c==33 || c==42 || c==64 || c==126) return true;
     for (var i = 1; i < s.length; i++) {
         c = s.charCodeAt(i);
-        if (!((c>=48&&c<=57) || (c>=65&&c<=90) || (c>=97&&c<=122))) return false;
+        if (!(c==33 || c==42 || (c>=48&&c<=57) || (c>=64&&c<=90) || (c>=97&&c<=122))) return false;
     }
     return true;
 }
