@@ -15686,6 +15686,7 @@ var codewardrobe = [
 '明月相随|0cD|5vsY|30|*F7|1b|*F7|53',
 '问情流恨|1Xr|*5wjb|30|*F7|1b|*F7|53',
 '时光旋律|N1rp|4Upa|||1b|x|30',
+'西瓜冰棍|M1UL|5dgY|||1b|n|c',
 ];
 
 var wardrobe = function() {
@@ -15756,4 +15757,4 @@ function iscode(s) {
     }
     return true;
 }
-var wardrobe_lastupd = '2020/7/13';
+var wardrobe_lastupd = '2020/7/15';
