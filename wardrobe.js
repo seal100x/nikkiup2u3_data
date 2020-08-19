@@ -15968,6 +15968,12 @@ var codewardrobe = [
 '夏日气息|3DO|4QAE|g||1c|x|30',
 '香芋奶冻|4CP|4PgP|g||1c|x|30',
 '糖果回忆|C1k2|4PiU|||1c|x|30',
+'夏日誓约|6FI|4QZm|g||1c|x|30',
+'夏日纪念|7VC|4Vtm|g||1c|x|30',
+'甜蜜狂想|I1k3|4PgQ|g||1c|x|30',
+'融化糖霜|0Zw|4PgE|g||1c|x|30',
+'兔兔绵绵冰|A1k1|4PiY|gI||1c|x|30',
+'无忧季节|E1k4|4QZl|g||1c|x|30',
 '梦魇终焉|0SQ|61Gp||FN|1c|2z|4S',
 '毁灭将至|2CH|5wlu|H|FN|1c|2z|4S',
 '残缺躯壳|3BO|5wKE|H|FN|1c|2z|4S',
@@ -15994,6 +16000,8 @@ var codewardrobe = [
 '编号997|S1DJ|5yKi|H|FO|1c|2z|4S',
 '虚妄野心|W4a|5vsY||FO|1c|2z|4S',
 '科学罪犯|1Oo|5vsY|H|*FO|1c|*FO|4T',
+'消暑大喵|R1v4|4YBS|I||1c|x|30',
+'冰糕邀约|I1v5|4Xli|I||1c|x|30',
 ];
 
 var wardrobe = function() {
@@ -16064,4 +16072,4 @@ function iscode(s) {
     }
     return true;
 }
-var wardrobe_lastupd = '2020/8/12';
+var wardrobe_lastupd = '2020/8/19';
