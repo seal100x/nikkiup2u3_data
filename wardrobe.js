@@ -16084,6 +16084,7 @@ var codewardrobe = [
 '紫罗兰之心|0d5|5TIE||*FT|1d|*FT|33',
 '暗夜星辰|1YX|5TFk|N|*FT|1d|*FT|33',
 '白雪纸鹤|C1yv|5Ygg||*FT|1d|*FT|33',
+'心愿纸鹤|T1ym|5TI4||*FT|1d|11|2X',
 '中宵风露|0cs|4Qak||FU|1d|30|52',
 '千峰翠色|2Gt|4VVB|3|FU|1d|30|52',
 '贡君秘色|2Gu|4Q94|3|*FU|1d|*FU|53',
