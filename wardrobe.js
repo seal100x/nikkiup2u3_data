@@ -16176,6 +16176,12 @@ var codewardrobe = [
 '禁忌传说|1Yd|5VHW|B|*Fa|1d|*Fa|1i',
 '夜色狩猎|81zH|5QKw|B|*Fa|1d|*Fa|1i',
 '殷红枷锁|C1zI|5UuI||*Fa|1d|*Fa|1i',
+'指引之阵|R1zC|5PVU|B|*Fa|1d|d|c',
+'黑暗低语|T1zD|5QNG|B|*Fa|1d|d|c',
+'林隙清风|3EV|4KuH|a||1d|x|30',
+'茂林修竹|4DP|4QIY|a||1d|x|30',
+'山间青崖|7Xb|4QIX|a||1d|x|30',
+'枕上诗书|I1y5|4Pqg|a||1d|x|30',
 ];
 
 var wardrobe = function() {
