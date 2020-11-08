@@ -16722,7 +16722,6 @@ var codewardrobe = [
 '盛辉星芒|823O|5PTY|D|G2|1f|4|B',
 '幽紫夜海|E23P|5UuJ|D|G2|1f|4|B',
 '羁绊星光|H23Q|5PVq|ND|G2|1f|4|B',
-'绽夜明星|W8c|5PVq||G2|1f|4|B',
 ];
 
 var wardrobe = function() {
@@ -16793,4 +16792,4 @@ function iscode(s) {
     }
     return true;
 }
-var wardrobe_lastupd = '2020/11/3';
+var wardrobe_lastupd = '2020/11/8';
