@@ -16891,7 +16891,6 @@ var codewardrobe = [
 '日月秘辛·碧|825F|5Pxi||@GC|1g|@25A|5D',
 '皎月清辉·碧|C25G|5Pxi||@GC|1g|@25B|5D',
 '遥望天河·碧|F25H|5PVr||@GC|1g|@25C|5D',
-'缕金繁梦|G25D|5UuI||@GC|1g|@25D|5D',
 '虔诚神女|0eS|5zFK||GD|1g|39|5B',
 '无相之境|1ZP|5ynG|F|GD|1g|39|5B',
 '誓言之路|2Hp|653g|F|GD|1g|39|5B',
