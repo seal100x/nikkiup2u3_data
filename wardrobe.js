@@ -18093,6 +18093,8 @@ var codewardrobe = [
 '信仰降临|J1um|5wKR|A|KV|1k|d|c',
 '沉默风语|0cH|5vsY||*KV|1k|*KV|*c',
 '薄雾行旅|3ED|5wlv|A|*KV|1k|*KV|*c',
+'酸甜莓果|0dE|4Q80||KJ|1k|x|3G',
+'蓝格日记|4DW|4QZs|a|KJ|1k|x|3G',
 ];
 
 var wardrobe = function() {
