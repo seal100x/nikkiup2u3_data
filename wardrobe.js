@@ -18113,6 +18113,8 @@ var codewardrobe = [
 '金蕊暗花|I290|3MtR||KX|1k|3F|4I',
 '奶油可可|6Ib|3MvZ||KX|1k|3F|4I',
 '糖心芋泥|1a2|3H5Q||KX|1k|3F|4I',
+'星球马戏|82EM|4w38|||1k|x|3G',
+'惊奇彩虹|M2EN|4w38|||1k|x|3G',
 ];
 
 var wardrobe = function() {
