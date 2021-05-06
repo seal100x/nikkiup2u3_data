@@ -18491,7 +18491,6 @@ var codewardrobe = [
 '热情尤物|4CQ|4SXi||LD|1l|1Q|c',
 '桑巴舞者|7VS|4IF0||LD|1l|1Q|c',
 '沸腾盛夏|81lE|4Nb9||LD|1l|1Q|c',
-'热情阳光|Vie|5PgE||LD|1l|1Q|c',
 '神佑之地|0fe|4Mjt||LE|1l|1Q|c',
 '狂欢曼舞|3Fe|4NdS|F|LE|1l|1Q|c',
 '荒野之语|4EQ|4IEp|F|LE|1l|1Q|c',
