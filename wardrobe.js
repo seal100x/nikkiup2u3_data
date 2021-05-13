@@ -18726,6 +18726,7 @@ var codewardrobe = [
 '花蕈小帽·幻|82Jw|5TLX|K|@LS|1m|@2Jt|4L',
 '蘑菇小房·幻|I2Jx|5TLW||@LS|1m|@2Ju|4L',
 '暖色菌环·幻|E2Jy|5SRt||@LS|1m|@2Jv|4L',
+'湛蓝夜空|V2Ku|5wja|||1m|0|0',
 ];
 
 var wardrobe = function() {
