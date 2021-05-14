@@ -18621,7 +18621,7 @@ var codewardrobe = [
 '暗影行者|H2Kr|5wm6|B|LN|1m|3H|4K',
 '夜色长镰|J2Ks|5wlv||LN|1m|3H|4K',
 '狂风白骨|Q2Kt|5whe|B|LN|1m|3H|4K',
-'湛蓝夜空|V2Ku|5wja||LN|1m|3H|4K',
+'湛蓝夜空|V2Ku|5wja||LN|1m|0|0',
 '诡雾弥漫|W9c|5wK3|B|LN|1m|3H|4K',
 '沉默之影|0hw|6282||*LN|1m|*LN|*4K',
 '夜色神迹|1cH|*5wlj|B|*LN|1m|*LN|*4K',
@@ -18726,7 +18726,12 @@ var codewardrobe = [
 '花蕈小帽·幻|82Jw|5TLX|K|@LS|1m|@2Jt|4L',
 '蘑菇小房·幻|I2Jx|5TLW||@LS|1m|@2Ju|4L',
 '暖色菌环·幻|E2Jy|5SRt||@LS|1m|@2Jv|4L',
-'湛蓝夜空|V2Ku|5wja|||1m|0|0',
+'纯净花园|R2JB|5zAm|D||1m|3H|4K',
+'重逢咏叹|T2JC|5yj6|2D||1m|3H|4K',
+'无边风月|T2JJ|650u|2D||1m|3H|4K',
+'无尽原野|U2KZ|5wjc|||1m|3H|4K',
+'长夜永伴|T2Ka|62AM|||1m|3H|4K',
+'炽金重临|T2Kk|5vqG|||1m|3H|4K',
 ];
 
 var wardrobe = function() {
@@ -18797,4 +18802,4 @@ function iscode(s) {
     }
     return true;
 }
-var wardrobe_lastupd = '2021/5/13';
+var wardrobe_lastupd = '2021/5/14';
