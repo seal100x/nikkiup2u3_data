@@ -20011,8 +20011,8 @@ var codewardrobe = [
 '云珰引玉|C2NS|5Wro||Lx|1o|3L|4N',
 '霜玉琵琶|J2NT|5Rnp|3|Lx|1o|3L|4N',
 '静不露机|W9w|5Rnp||Lx|1o|3L|4N',
-'燕坐隔岸|1cu|*5XdJ|3|*Lx|1o|*Lx|*c',
-'飞霜不疑|A2NU|5SZ6||*Lx|1o|*Lx|*c',
+'燕坐隔岸|1cu|*5XdJ|3|*Lx|1o|*Lx|*4N',
+'飞霜不疑|A2NU|5SZ6||*Lx|1o|*Lx|*4N',
 '诡色迷雾|0iq|4sfc|e|Ly|1o|3L|4N',
 '霓虹幻影|2KE|4xjQ|e|Ly|1o|3L|4N',
 '一剪夜痕|3LB|50nQ|e|Ly|1o|3L|4N',
@@ -20026,8 +20026,8 @@ var codewardrobe = [
 '夜色陷阱|H2NL|50MQ||Ly|1o|3L|4N',
 '未竟羽翼|O2NN|4xjR||Ly|1o|3L|4N',
 '噩兆回响|W9v|4xjc||Ly|1o|3L|4N',
-'凯旋之风|1cr|*4xjR|e|*Ly|1o|*Ly|*c',
-'爆裂之声|N2NM|4xjc||*Ly|1o|*Ly|*c',
+'凯旋之风|1cr|*4xjR|e|*Ly|1o|*Ly|*4N',
+'爆裂之声|N2NM|4xjc||*Ly|1o|*Ly|*4N',
 '冬夜裂痕|0io|5PFd||Lz|1o|3L|4N',
 '寂雪终焉|3LA|5PFd|B|Lz|1o|3L|4N',
 '凛冬孤城|4Fb|5Pgo|B|Lz|1o|3L|4N',
@@ -20042,9 +20042,9 @@ var codewardrobe = [
 '宿命回眸|F2NF|4xhA||Lz|1o|3L|4N',
 '罪孽霜花|O2NG|4xjc||Lz|1o|3L|4N',
 '流逝玄花|W9u|4xjc||Lz|1o|3L|4N',
-'冬夜荒墟|0ip|4wto||*Lz|1o|*Lz|*c',
-'长夜颂歌|1cq|*50nF|B|*Lz|1o|*Lz|*c',
-'白昼凝光|1cx|*4sfR|B|*Lz|1o|*Lz|*c',
+'冬夜荒墟|0ip|4wto||*Lz|1o|*Lz|*4N',
+'长夜颂歌|1cq|*50nF|B|*Lz|1o|*Lz|*4N',
+'白昼凝光|1cx|*4sfR|B|*Lz|1o|*Lz|*4N',
 '远空来信|0gw|34R5||L-|1o|3M|4O',
 '夜幕星点|3G3|2_Ph||L-|1o|3M|4O',
 '纯色旧忆|4Ep|2_PX||L-|1o|3M|4O',
@@ -20154,4 +20154,4 @@ function iscode(s) {
     }
     return true;
 }
-var wardrobe_lastupd = '2021/10/13';
+var wardrobe_lastupd = '2021/10/14';
