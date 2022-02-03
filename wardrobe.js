@@ -21277,7 +21277,7 @@ function numberToInventoryId(s) {
 function iscode(s) {
     for (var i = 1; i < s.length; i++) {
         c = s.charCodeAt(i);
-        if (!(c==33 || c==42 || (c>=48&&c<=57) || (c>=64&&c<=90) || (c>=97&&c<=122))) return false;
+        if (!(c==33 || c==42 || c==45 || c==95 || (c>=48&&c<=57) || (c>=64&&c<=90) || (c>=97&&c<=122))) return false;
     }
     return true;
 }
