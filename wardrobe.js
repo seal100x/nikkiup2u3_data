@@ -21367,7 +21367,6 @@ var codewardrobe = [
 '坠梦纱幔|4Gp|4xjQ|F|ND|1s|_|2L',
 '朦胧行迹|7eD|4xjc|F|ND|1s|_|2L',
 '幻惑之神|WAS|4wto||ND|1s|_|2L',
-'热情阳光|VhG|4x1s||ND|1s|_|2L',
 '餍梦灵兽|R2fI|4xig|I|ND|1s|_|2L',
 '渡梦斛舟|U2fJ|50oY||ND|1s|_|2L',
 '琉彩心灯|T2fK|4xkY||ND|1s|_|2L',
