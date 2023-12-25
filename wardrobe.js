@@ -27632,9 +27632,12 @@ var codewardrobe = [
 '风幡祝祷|1nn|*5X4Q|FY|*TD|27|*TD|*4j',
 '纯真牧歌|WDX|5S0R|F|*TD|27|*TD|*4j',
 '飘摇转蓬|83Rf|5WoS|FY|*TD|27|*TD|*4j',
+'霜雪绵绵|0v7|4Vcr||TE|27|4|B',
+'冬境森语|2QA|4fKm|IY|TE|27|4|B',
 '素白轻裹|3RN|4Vbi||TE|27|4|B',
 '冬季吟旅|4L9|4W0i||TE|27|4|B',
 '柔软编织|6Rl|4a0r||TE|27|4|B',
+'迷你树熊|5S2|4VGK|I|TE|27|4|B',
 '叶落满枝|7mI|4U_S||TE|27|4|B',
 '糯米雪团|83Pt|4fKm|IY|TE|27|4|B',
 '长日暖眠|D3Pu|4fMq|IY|TE|27|4|B',
@@ -27945,6 +27948,8 @@ var codewardrobe = [
 '小小圣诞树|B2QT|41J2|||27|d|c',
 '圣诞传闻|M2QU|45wA|||27|d|c',
 '冰雪祝福|S3P0|53So|D||27|d|c',
+'不苟言笑|83O_|5X4R|D||27|x|4W',
+'童话盛宴|1n8|5S0Q|D||27|x|4W',
 ];
 
 var wardrobe = function() {
